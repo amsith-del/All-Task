@@ -1,1 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Form | Amsithbershio</title>
+</head>
+<body bgcolor="#f2f2f2">
+    <header>
+        <nav>
+           <font color="blue" align="center"> <h1> Registration Form</h1></font>
+        </nav>
+    </header>
+    <section>
+        <form>
+            <fieldset>
 
+                <legend>Personal Information</legend>
+
+                <label for="name">Full Name:</label>
+                <input type="text" name="name" placeholder="Enter your name" minlength="4" maxlength="24" autofocus required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email"placeholder="Enter your email"><br><br>
+                <label for="password">Enter Password</label>
+                <input type="password" name="password"placeholder="Enter 6-digit number"><br><br>
+                 <label for="number">Enter Number:</label>
+                <input type="tel" name="number" placeholder="Enter your number" pattern="[0-9]{10}"><br><br>
+                 <label for="age">Enter Age:</label>
+                <input type="number" name="age" placeholder="Enter your age" minlength="18" maxlength="60"><br><br>
+                 <label for="dob">Enter Your DOB:</label>
+                <input type="date" name="dob" placeholder="Enter your DOB" ><br><br>
+                 <label for="time">Meeting Time:</label>
+                <input type="time" name="time"  ><br><br>
+            </fieldset><br>
+            <br>
+            <section>
+            <fieldset>
+                <legend>Professional Details</legend>
+                    <label for="url">Portfolio URL</label>
+                    <input type="url" placeholder="https://example.com" name="url"><br><br>
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" name=color><br><br>
+                    <label for="level">Skill Level:</label>
+                    <input type="range" minlength="1"maxlength="10"><br><br>
+                    <label for="file">Upload Resume</label>
+                    <input type="file" name="file"><br><br>
+                    <label for="checkbox">Skills:</label>
+                    <label for="checkbox">HTML</label>
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">CSS</label>
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">JAVASCRIPT</label>
+                    <input type="checkbox" name="checkbox"><br><br>
+                    <label for="gender">Gender:</label>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="gender">
+                     <label for="gender">Female</label>
+                    <input type="radio" name="gender">
+
+                    
+            </fieldset>
+            </section>
+            <section>
+
+            <fieldset>
+                <legend>Additional Details</legend>
+
+                <label for="department">Department</label>
+
+                <select required>
+                    <optgroup label="Design">
+                        <option>UI Design</option>
+                        <option>UX Design</option>
+                        <option>Graphic Design</option>
+                    </optgroup>
+                     <optgroup label="Development">
+                        <option>Frontend</option>
+                        <option>Backend</option>
+                        <option>Full Stack</option>
+                    </optgroup>
+                </select><br><br>
+                <label>Country</label>
+                <select required>
+                    <optgroup label="Asia">
+                        <option>India</option>
+                        <option>Japan</option>
+                        <option>China</option>
+                    </optgroup>
+                     <optgroup label="Europe">
+                        <option>Germany</option>
+                        <option>France</option>
+                        <option>Italy</option>
+                    </optgroup>
+                </select><br><br>
+                   <label>Preferred Browser:</label>
+                   <input list="browser">
+                   <datalist id="browser">
+                    <option>Chrome</option>
+                     <option>Firefox</option>
+                   </datalist><br><br>
+                    <label>Address:</label>
+
+            <br>
+
+            <textarea rows="5" cols="40" maxlength="100" placeholder="Enter your address"> </textarea>  <br><br>
+                   <input type="text" value="USR123" readonly><br><br>
+                    <label>Disabled Field:</label>
+
+            <input type="text" value="Disabled Input" disabled>
+            </fieldset>
+            </section><br>
+            <section>
+                  <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+            </section>
+        </form>
+    </section>
+</body>
+</html>
