@@ -1,9 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Attributes</title>
+
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Attributes & Metadata Showcase</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="icon16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="appleicon.png">
+
 </head>
-<body>
+
+<body bgcolor="lightyellow">
+
+    <h1 id="main-title" class="heading title" title="Main Heading" align="center">
+        HTML Attributes Showcase
+    </h1>
+    <h2>Data Attributes </h2>
+
+    <!-- Data Attributes -->
+    <div id="product1"
+        class="box item"
+        title="Product Information"
+        data-product-id="101"
+        data-category="Electronics">
+
+        Laptop Product
+    </div><br>
+
+    <div id="product2"
+        class="box item"
+        title="Book Information"
+        data-product-id="102"
+        data-category="Books">
+
+        Programming Book
+    </div>
+
+    <p id="info1"
+        class="text para"
+        title="Paragraph Example"
+        data-user="Amsith"
+        data-role="Developer">
+
+        This paragraph contains custom data attributes.
+    </p>
+
+    <button id="btn1"
+        class="btn primary"
+        title="Click Button"
+        data-action="submit"
+        data-page="home">
+
+        Submit
+    </button>
+
+    <img id="img1"
+        class="image photo"
+        title="Nature Image"
+        src="https://via.placeholder.com/150"
+        alt="Sample Image"
+        data-image-id="500"
+        data-type="nature">
+
+    <hr>
+
+    <!-- Global Attributes -->
+    <h2 id="heading2"
+        class="section-heading"
+        title="Global Attributes Example">
+
+        Global Attributes
+    </h2>
+
+    <p id="para1"
+        class="content"
+        title="Direction Example"
+        dir="rtl">
+
+        This text is displayed from right to left.
+    </p>
+
+    <hr>
+
+    <!-- contenteditable -->
+    <h2>Contenteditable Example</h2>
+
+    <p contenteditable="true">
+        You can edit this paragraph.
+    </p>
+
+    <div contenteditable="true">
+        This div is editable by the user.
+    </div>
+
+    <hr>
+
+    <!-- Draggable -->
+    <h2>Draggable Elements</h2>
+
+    <div draggable="true">Drag Me 1</div>
+    <p draggable="true">Drag Me 2</p>
+    <img draggable="true"
+        src="https://via.placeholder.com/100"
+        alt="Draggable Image">
+
+    <hr>
+
+    <!-- Hidden Attribute -->
+    <h2>Hidden Attribute</h2>
+
+    <p hidden>
+        This paragraph is hidden.
+    </p>
+
+    <hr>
+
+    <!-- Tabindex -->
+    <h2>Tabindex Example</h2>
+
+    <input type="text" placeholder="Tab 1" tabindex="1">
+
+    <input type="text" placeholder="Tab 2" tabindex="2">
+
+    <button tabindex="3">
+        Button
+    </button>
+
+    <a href="#" tabindex="0">
+        Link
+    </a>
+
+    <textarea tabindex="-1">
+This textarea is skipped in tab order.
+    </textarea>
+
+    <hr>
+
+    <!-- Spellcheck -->
+    <h2>Spellcheck Example</h2>
+
+    <input type="text"
+        spellcheck="true"
+        value="Thiss is spellcheck enabled">
+
+    <br><br>
+
+    <textarea spellcheck="false">
+Spellcheck disabled heree.
+    </textarea>
+
+    <hr>
+
+    <!-- Translate Attribute -->
+    <h2>Translate Attribute</h2>
+
+    <p translate="no">
+        OpenAI ChatGPT
+    </p>
+
+    <p translate="yes">
+        This text can be translated.
+    </p>
+
+    <hr>
+
+    <!-- HTML Entities -->
+    <h2>HTML Entities</h2>
+
+    <p>
+        &copy; Copyright <br>
+        &reg; Registered <br>
+        &trade; Trademark <br>
+        &euro; Euro <br>
+        &pound; Pound <br>
+        &nbsp; Non Breaking Space <br>
+        &lt; Less Than <br>
+        &gt; Greater Than <br>
+        &amp; Ampersand <br>
+        &quot; Double Quote
+    </p>
 
 </body>
+
 </html>
